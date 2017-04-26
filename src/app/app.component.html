@@ -1,3 +1,4 @@
-<h1>
+<h1 *ngIf="title != ''; else loading">
   {{title}}
 </h1>
+<ng-template #loading>No title defined</ng-template>
